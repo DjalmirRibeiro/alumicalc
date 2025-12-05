@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8HHBCTB5K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M8HHBCTB5K');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alumicalc - Sistema de Cálculos e Projetos para Esquadrias">
@@ -23,7 +32,7 @@
                     <li><a href="#funcoes" class="nav-link">Funções</a></li>
                     <li><a href="#comprar" class="nav-link">Comprar</a></li>
                 </ul>
-                <a href="https://wa.me/5583988511026?text=Orçamento" target="_blank" class="btn-whatsapp">
+                <a href="https://wa.me/5583988511026?text=Orçamento" target="_blank" class="btn-whatsapp" onclick="gtag('event', 'click', {'event_category': 'WhatsApp', 'event_label': 'Botão Header'});">
                     <i class="fab fa-whatsapp"></i> Orçamento
                 </a>
                 <div class="hamburger" id="hamburger">
@@ -41,7 +50,7 @@
         <div class="container hero-content">
             <h1 class="hero-title">Sistema de Cálculos e Projetos para Esquadrias</h1>
             <p class="hero-subtitle">Sistema simples para obter seus projetos em apenas alguns cliques</p>
-            <a href="https://wa.me/5583988511026?text=Orçamento" target="_blank" class="btn-primary">
+            <a href="https://wa.me/5583988511026?text=Orçamento" target="_blank" class="btn-primary" onclick="gtag('event', 'click', {'event_category': 'WhatsApp', 'event_label': 'Botão Hero'});">
                 <i class="fab fa-whatsapp"></i> Solicite seu Orçamento
             </a>
         </div>
@@ -163,10 +172,10 @@
                     <h3>Solicite seu Orçamento</h3>
                     <p>Entre em contato conosco pelo WhatsApp ou adquira diretamente pelo Mercado Pago</p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
-                        <a href="https://wa.me/5583988511026?text=Orçamento" target="_blank" class="btn-primary">
+                        <a href="https://wa.me/5583988511026?text=Orçamento" target="_blank" class="btn-primary" onclick="gtag('event', 'click', {'event_category': 'WhatsApp', 'event_label': 'Botão Comprar'});">
                             <i class="fab fa-whatsapp"></i> WhatsApp
                         </a>
-                        <a href="https://mpago.la/1pTbxb4" target="_blank" class="btn-primary" style="background: #009EE3; color: #fff;">
+                        <a href="https://mpago.la/1pTbxb4" target="_blank" class="btn-primary" style="background: #009EE3; color: #fff;" onclick="gtag('event', 'purchase_click', {'event_category': 'Mercado Pago', 'event_label': 'Botão Comprar', 'value': 1});">
                             <i class="fas fa-shopping-cart"></i> Mercado Pago
                         </a>
                     </div>
